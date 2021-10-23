@@ -1751,6 +1751,13 @@ GL_TEXTURE_MAX_ANISOTROPY                                                       
 GL_MAX_TEXTURE_MAX_ANISOTROPY                                                      =     0x84FF
 GL_POLYGON_OFFSET_CLAMP                                                            =     0x8E1B
 GL_CONTEXT_FLAG_NO_ERROR_BIT                                      ::GLbitfield     =     0x00000008
+GL_MAP_PERSISTENT_BIT                                             ::GLbitfield     =     0x0040
+GL_MAP_COHERENT_BIT                                               ::GLbitfield     =     0x0080
+GL_DYNAMIC_STORAGE_BIT                                            ::GLbitfield     =     0x0100
+GL_CLIENT_STORAGE_BIT                                             ::GLbitfield     =     0x0200
+GL_CLIENT_MAPPED_BUFFER_BARRIER_BIT                               ::GLbitfield     =     0x000004000
+GL_BUFFER_IMMUTABLE_STORAGE                                                        =     0x821F
+GL_BUFFER_STORAGE_FLAGS                                                            =     0x8220
 end
 
 # Define custom overloads for important constants, to make sure they print correctly.
