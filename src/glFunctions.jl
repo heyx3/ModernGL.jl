@@ -661,3 +661,21 @@ fixedsamplelocations::GLboolean)::Cvoid
 @glfunc glMultiDrawArraysIndirectCount(mode::GLenum, indirect::Ptr{Cvoid}, drawcount::GLsizei, maxdrawcount::GLsizei, stride::GLsizei)::Cvoid
 @glfunc glMultiDrawElementsIndirectCount(mode::GLenum, type::GLenum, indirect::Ptr{Cvoid}, drawcount::GLsizei, maxdrawcount::GLsizei, stride::GLsizei)::Cvoid
 @glfunc glPolygonOffsetClamp(factor::GLfloat, units::GLfloat, clamp::GLfloat)::Cvoid
+
+# ARB_bindless_texture:
+@glfunc glGetTextureHandleARB(texture::GLuint)::GLuint64
+@glfunc glGetTextureSamplerHandleARB(texture::GLuint, sampler::GLuint)::GLuint64
+@glfunc glMakeTextureHandleResidentARB(handle::GLuint64)::Cvoid
+@glfunc glMakeTextureHandleNonResidentARB(handle::GLuint64)::Cvoid
+@glfunc glGetImageHandleARB(texture::GLuint, level::GLint, layered::GLboolean, layer::GLint, format::GLenum)::GLuint64
+@glfunc glMakeImageHandleResidentARB(handle::GLuint64, access::GLenum)::Cvoid
+@glfunc glMakeImageHandleNonResidentARB(handle::GLuint64)::Cvoid
+@glfunc glUniformHandleui64ARB(location::GLint, value::GLuint64)::Cvoid
+@glfunc glUniformHandleui64vARB(location::GLint, count::GLsizei, value::Ptr{GLuint64})::Cvoid
+@glfunc glProgramUniformHandleui64ARB(program::GLuint, location::GLint, value::GLuint64)::Cvoid
+@glfunc glProgramUniformHandleui64vARB(program::GLuint, location::GLint, count::GLsizei, values::Ptr{GLuint64})::Cvoid
+@glfunc glIsTextureHandleResidentARB(handle::GLuint64)::GLboolean
+@glfunc glIsImageHandleResidentARB(handle::GLuint64)::GLboolean
+@glfunc glVertexAttribL1ui64ARB(index::GLuint, x::GLuint64)::Cvoid
+@glfunc glVertexAttribL1ui64vARB(index::GLuint, v::Ptr{GLuint64})::Cvoid
+@glfunc glGetVertexAttribLui64vARB(index::GLuint, pname::GLenum, params::Ptr{GLuint64})::Cvoid
