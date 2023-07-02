@@ -1,5 +1,5 @@
 import GLFW
-using ModernGL
+using ModernGLbp
 include("util.jl")
 
 # Check the name/type of the GLENUM constants.

@@ -1,6 +1,6 @@
-# ModernGL
+**Forked** from the official repo, for use in B+. Mainly done to get ARB extensions, but also to improve the internal macros and `GLENUM` utility.
 
-[![Build Status](https://github.com/JuliaGL/ModernGL.jl/workflows/CI/badge.svg?branch=master)](https://github.com/JuliaGL/ModernGL.jl/actions)
+# ModernGL
 
 OpenGL bindings for OpenGL 3.0 through 4.6. As OpenGL 3.0 has a lot of overlaps with OpenGL 2.1, OpenGL 2.1 is partly supported as well.
 

@@ -1,4 +1,4 @@
-module ModernGL
+module ModernGLbp
 
 using Libdl
 
@@ -50,7 +50,7 @@ end
 # Sadly, this doesn't work for Linux, as glxGetProcAddress
 # always returns a non null function pointer, as the function pointers are not depending on an active context.
 isavailable(name::Symbol) =
-    isavailable(ModernGL.getprocaddress(ascii(string(name))))
+    isavailable(ModernGLbp.getprocaddress(ascii(string(name))))
 
 isavailable(ptr::Ptr{Cvoid}) = !(
     ptr == C_NULL ||
@@ -124,7 +124,7 @@ macro GenEnums(list::Expr)
             e_value = :(convert($e_type, $(esc(value))))
             output = quote
                 const $e_name = $e_value
-                ModernGL.MGL_LOOKUP[$e_value] = Symbol($str_name)
+                ModernGLbp.MGL_LOOKUP[$e_value] = Symbol($str_name)
                 export $e_name
             end
             return output

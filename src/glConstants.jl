@@ -1769,7 +1769,7 @@ end
 macro custom_glenum(value::Integer, name::Symbol, real_type::DataType = GLenum)
     e_name = :(Symbol($(string(name))))
     return :(
-        ModernGL.GLENUM(::Val{UInt32($value)}) =
+        ModernGLbp.GLENUM(::Val{UInt32($value)}) =
             GLENUM{$real_type}(convert($real_type, $value), $e_name)
     )
 end
