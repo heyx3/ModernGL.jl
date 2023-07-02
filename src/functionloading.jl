@@ -1,4 +1,4 @@
-const depsfile = joinpath("..", "deps", "deps.jl")
+const depsfile = normpath(joinpath(@__DIR__, "..", "deps", "deps.jl"))
 
 if isfile(depsfile)
     include(depsfile)
@@ -56,7 +56,7 @@ macro glfunc(opengl_func)
     end
     ptr_sym = gensym("$(func_name)_func_pointer")
     ret = quote
-        const $ptr_sym = Ref{Ptr{Cvoid}}()
+        const $ptr_sym = Ref{Ptr{Cvoid}}(C_NULL)
         function $func_name($(arg_names...))
             if $ptr_sym[]::Ptr{Cvoid} == C_NULL
                 $ptr_sym[]::Ptr{Cvoid} = $ptr_expr
