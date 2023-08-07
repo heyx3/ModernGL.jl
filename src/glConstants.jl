@@ -1762,7 +1762,14 @@ GL_CLIENT_STORAGE_BIT                                             ::GLbitfield  
 GL_CLIENT_MAPPED_BUFFER_BARRIER_BIT                               ::GLbitfield     =     0x000004000
 GL_BUFFER_IMMUTABLE_STORAGE                                                        =     0x821F
 GL_BUFFER_STORAGE_FLAGS                                                            =     0x8220
+GL_INT64_ARB                                                                       =     0x140E
+GL_INT64_VEC2_ARB                                                                  =     0x8FE9
+GL_INT64_VEC3_ARB                                                                  =     0x8FEA
+GL_INT64_VEC4_ARB                                                                  =     0x8FEB
 GL_UNSIGNED_INT64_ARB                                                              =     0x140F
+GL_UNSIGNED_INT64_VEC2_ARB                                                         =     0x8FF5
+GL_UNSIGNED_INT64_VEC3_ARB                                                         =     0x8FF6
+GL_UNSIGNED_INT64_VEC4_ARB                                                         =     0x8FF7
 end
 
 # Define custom overloads for important constants, to make sure they print correctly.
