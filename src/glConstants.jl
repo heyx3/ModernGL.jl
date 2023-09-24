@@ -551,6 +551,7 @@ GL_UNSIGNED_INT                                                                 
 GL_LUMINANCE4_ALPHA4                                                               =     0x8043
 GL_X3D_COLOR                                                                       =     0x0602
 GL_COMPUTE_LOCAL_WORK_SIZE                                                         =     0x8267
+GL_COMPUTE_WORK_GROUP_SIZE                                                         =     0x8267
 GL_SHADER_STORAGE_BUFFER_SIZE                                                      =     0x90D5
 GL_TEXTURE_BUFFER                                                                  =     0x8C2A
 GL_POSITION                                                                        =     0x1203
@@ -981,6 +982,7 @@ GL_IMAGE_BINDING_LAYERED                                                        
 GL_PIXEL_PACK_BUFFER_BINDING                                                       =     0x88ED
 GL_RGB                                                                             =     0x1907
 GL_MAX_COMPUTE_WORK_GROUP_COUNT                                                    =     0x91BE
+GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS                                              =     0x90EB
 GL_ALPHA_INTEGER                                                                   =     0x8D97
 GL_DEBUG_SOURCE_WINDOW_SYSTEM                                                      =     0x8247
 GL_MAX_GEOMETRY_INPUT_COMPONENTS                                                   =     0x9123
